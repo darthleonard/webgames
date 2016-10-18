@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = 'utf-8'>
+	<title>Juego de Boston</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type='text/javascript' src='fns.js'></script>
+	<script type='text/javascript' src='juego.js'></script>
+</head>
+<body>
+
+<div id="contenedor">
+	<div id="titulo">
+		Boston
+	</div>
+
+	<div id="contenido">
+		<div id="izquierda">
+			<div id="jugador" class="jugador">
+				Jugador
+			</div>
+			<div id="dados">
+				<div id="humano_d1" class="dado" onclick="seleccionaNumero(1);">-</div>
+				<div id="humano_d2" class="dado" onclick="seleccionaNumero(2);">-</div>
+				<div id="humano_d3" class="dado" onclick="seleccionaNumero(3);">-</div>
+			</div>
+			<div id="puntos">
+				<div class="line">puntos:</div>
+				<div id="humano_puntos" class="line">0</div>
+			</div>
+
+		</div>
+		<div id="derecha">
+			<div id="pc" class="jugador">
+				PC
+			</div>
+			<div id="dados">
+				<div id="pc_d1" class="dado">1</div>
+				<div id="pc_d2" class="dado">2</div>
+				<div id="pc_d3" class="dado">3</div>
+			</div>
+			<div id="puntos">
+				<div class="line">puntos:</div>
+				<div id="pc_puntos" class="line">0</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="consola">
+		Clic en iniciar juego!
+	</div>
+
+	<div id="pie" class="center">
+		<div id="izquierda">
+			<div class="line">Ronda:</div>
+			<div id="ronda" class="line"></div>
+		</div>
+		<div id="botonTirar" class="boton" onclick="Tira();">
+			Tira dados
+		</div>
+	</div>
+
+	<div id="btnJugar" class="center boton" onclick="startGame();"><h1>INICIAR JUEGO</h1></div>
+</div>	
+
+</body>
+</html>

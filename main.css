@@ -1,0 +1,114 @@
+* {
+	font-family: Arial
+}
+
+div	{
+	/*border: 1px solid;*/
+	padding: 0.5em;
+}
+
+.borde {
+	border: 1px dotted;
+}
+
+#contenedor {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#titulo {
+	background-color: #D9C979;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#contenido {
+	overflow: hidden;
+	background-color: #F2F2F2;
+	padding: 3em;
+}
+
+#izquierda {
+	float: left;
+	width: 45%;
+	background-color: #F39C3E;
+}
+ 
+#derecha {
+	float: right;
+	width: 45%;
+	background-color: #F39C3E;
+}
+
+#dados {
+	padding: 1em;
+}
+
+#puntos {
+	border: 1px solid;
+}
+
+#consola {
+	border-style: inset;
+	background-color: #DCC9C9;
+	height: 5em;
+	overflow: auto;
+	/*overflow-y: scroll;*/
+
+	font-size: 0.7em;
+}
+
+#pie {
+	clear: both;
+	background-color: #D9C979;
+	overflow: hidden;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.jugador {
+	border-style: double;
+	text-align: center;
+	font-weight: bold;
+}
+
+.en-turno {
+	box-shadow: 0 0 2em #5CE3F2;
+}
+
+.dado {
+	border: 1px solid;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.dado:hover {
+	box-shadow: 0 0 2em #5CE3F2;
+}
+
+.line {
+	display: inline;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.boton {
+	float: right;
+	width: 35%;
+	border-radius: 1em;
+	background-color: #A67A6A;
+	border-style: outset;
+
+	text-align: center;
+	font-weight: bold;
+}
+
+.boton:hover {
+	background-color: #E1D441;
+	border-style: inset;
+}

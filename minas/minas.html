@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = 'utf-8'>
+	<title>Minas</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type='text/javascript' src='fns.js'></script>
+</head>
+
+<body onload="init()">
+	<center>
+		<div id="controles">
+			
+			<input type="radio" name="nivel" value="1" onchange="ajustaNivel(1)" checked />Bajo&nbsp;|&nbsp;
+			<input type="radio" name="nivel" value="2" onchange="ajustaNivel(2)" />Medio&nbsp;|&nbsp;
+			<input type="radio" name="nivel" value="3" onchange="ajustaNivel(3)" />Alto			
+			
+		</div>
+		<canvas id="myCanvas" width="400" height="500" style="border:1px solid #000000;" onMouseMove="coord(event)"> </canvas>
+		<!-- <audio src="exp.mp3" ></audio> -->
+		<audio src="http://www.sonidosmp3gratis.com/sounds/008842237_prev.mp3" ></audio>
+
+	</center>
+</body>
+</html>
